@@ -1,11 +1,11 @@
 import config from '../../../config.json';
 
-export const instagram = async (args: string[]): Promise<string> => {
+export const pixelfed = async (args: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open(`https://www.instagram.com/${config.social.instagram}/`);
+    window.open(`https://pixelfed.de/${config.social.pixelfed}/`);
   }, 1000);
 
-  return 'Opening instagram...';
+  return 'Opening Pixelfed...';
 };
 
 export const github = async (args: string[]): Promise<string> => {
@@ -32,10 +32,10 @@ export const linkedin = async (args: string[]): Promise<string> => {
   return 'Opening linkedin...';
 };
 
-export const telegram = async (args: string[]): Promise<string> => {
+export const twitter = async (args: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open(`https://t.me/${config.social.telegram}/`);
+    window.open(`https://twitter.com/${config.social.twitter}/`);
   }, 1000);
 
-  return 'Opening Telegram...';
+  return 'Opening Twitter...';
 };
