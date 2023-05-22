@@ -3,13 +3,13 @@
   "version": "2.14.4",
   "license": "MIT",
   "author": {
-    "name": "AmirHossein Ahmadi",
-    "url": "https://amirh-khali.github.io",
-    "email": "amirh.khali@gmail.com"
+    "name": "Jain Ramchurn",
+    "url": "https://term.zain.mu",
+    "email": "jain.ramchurn@proton.me"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AmirH-KHALI/amirh-khali.github.io"
+    "url": "https://github.com/k3ii/term"
   },
   "scripts": {
     "start": "next start",
