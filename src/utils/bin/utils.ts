@@ -15,16 +15,17 @@ export const help = async (args: string[]): Promise<string> => {
   weather   - command-line tool to obtain weather conditions and forecasts
   whoami    - print effective userid
   projects  - list of my public projects on GitHub
-  repo      - the repository of this beauty :D
+  repo      - the repository of this website 
   resume    - my CV in pdf
   
   theme [arg] - use wide range of themes
   trex        - play t-rex without disconnection :D
 
   github,
-  instagram,
+  gitlab,
+  pixelfed,
   linkedin,
-  telegram  - My personal pages on these social networks
+  twitter  - My personal pages on these social networks
 
   [tab]     trigger completion
   [ctrl+l]  clear terminal
@@ -45,9 +46,9 @@ export const date = async (args: string[]): Promise<string> => {
 };
 
 export const email = async (args: string[]): Promise<string> => {
-  window.open('mailto:amirh.khali@gmail.com');
+  window.open('mailto:jain.ramchurn@proton.me');
 
-  return 'Opening mailto:amirh.khali@gmail.com...';
+  return 'Opening mailto:jain.ramchurn@proton.me...';
 };
 
 export const vim = async (args: string[]): Promise<string> => {
@@ -58,12 +59,12 @@ export const emacs = async (args?: string[]): Promise<string> => {
   return `really? emacs? you should be using 'vim'`;
 };
 
-export const koobs = async (args?: string[]): Promise<string> => {
+export const neo = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://youtu.be/yiLXNmPcEzw');
+    window.open('https://www.youtube.com/watch?v=O5b0ZxUWNf0');
   }, 1000);
 
-  return `Inas ke badeee:D`;
+  return `Escape the matrix`;
 };
 
 export const repo = async (args?: string[]): Promise<string> => {
@@ -76,7 +77,6 @@ export const repo = async (args?: string[]): Promise<string> => {
 
 export const banner = (args?: string[]): string => {
   return `
-
 - Greeting, curious mind! 
 Step into the digital matrix of my portfolio. 
 
