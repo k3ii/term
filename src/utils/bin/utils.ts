@@ -68,7 +68,7 @@ export const koobs = async (args?: string[]): Promise<string> => {
 
 export const repo = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://github.com/AmirH-KHALI/amirh-khali.github.io');
+    window.open('https://github.com/k3ii/term');
   }, 1000);
 
   return 'Opening repository...';
@@ -76,15 +76,9 @@ export const repo = async (args?: string[]): Promise<string> => {
 
 export const banner = (args?: string[]): string => {
   return `
-  ██╗  ██╗██╗██╗██╗
-  ██║  ██║██║██║██║
-  ███████║██║██║██║
-  ██╔══██║██║██║╚═╝
-  ██║  ██║██║██║██╗
-  ╚═╝  ╚═╝╚═╝╚═╝╚═╝
 
-- Who am I?
-Im Amirhossein Ahmadi, a former student of the Computer Olympiad, with a background as a Backend Developer (Spring, Django) and limited work in the field of Data Science.
+- Greeting, curious mind! 
+Step into the digital matrix of my portfolio. 
 
 - How to work with this terminal?
 Type 'help' to see list of available commands.
