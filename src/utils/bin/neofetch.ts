@@ -44,26 +44,25 @@ llllllllllllll  lllllllllllllllllll
 `;
 
 const linux = `
-            .-/+oossssoo+/-.               
-        \`:+ssssssssssssssssss+:\`           
-      -+ssssssssssssssssssyyssss+-         
-    .ossssssssssssssssssdMMMNysssso.       
-   /ssssssssssshdmmNNmmyNMMMMhssssss/      
-  +ssssssssshmydMMMMMMMNddddyssssssss+     
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   
- /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    
-  +sssssssssdmydMMMMMMMMddddyssssssss+     
-   /ssssssssssshdmNNNNmyNMMMMhssssss/      
-    .ossssssssssssssssssdMMMNysssso.
-      -+sssssssssssssssssyyyssss+-
-        \`:+ssssssssssssssssss+:\`
-            .-/+oossssoo+/-.
+                   -\`
+                  .o+\`
+                 \`ooo/
+                \`+oooo:
+               \`+oooooo:
+               -+oooooo+:
+             \`/:-:++oooo+:
+            \`/++++/+++++++:
+           \`/++++++++++++++:
+          \`/+++ooooooooooooo/\`
+         ./ooosssso++osssssso+\`
+        .oossssso-\`\`\`\`/ossssss+\`
+       -osssssso.      :ssssssso.
+      :osssssss/        osssso+++.
+     /ossssssss/        +ssssooo/-
+   \`/ossssso+/:-        -:/+osssso+-
+  \`+sso+:-\`                 \`.-/+oso:
+ \`++:.                           \`-/+/
+ .\`                                 \`/
 `;
 
 const getPlatform = (): 'Unknown' | 'Windows' | 'MacOS' | 'Linux' => {
@@ -93,9 +92,9 @@ const getMainColor = () => {
     case 'MacOS':
       return theme.cyan;
     case 'Windows':
-      return theme.blue;
+      return theme.green;
     case 'Linux':
-      return theme.red;
+      return theme.blue;
   }
 };
 
