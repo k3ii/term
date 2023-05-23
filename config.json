@@ -1,11 +1,10 @@
 {
-  "bioUrl": "https://raw.githubusercontent.com/AmirH-KHALI/AmirH-KHALI/main/README.md",
   "social": {
-    "instagram": "khaaliofficial",
+    "pixelfed": "zain",
     "github": "k3ii",
     "gitlab": "jain.ramchurn",
     "linkedin": "jain-ramchurn",
-    "telegram": "DLoneSwordsman"
+    "twitter": "EdogawaZain"
   },
   "theme": "amirh",
   "border": true
