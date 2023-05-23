@@ -1,4 +1,6 @@
 import * as bin from './index';
+import { getQuote } from '../../api';
+import { usageText } from '../usageText';
 
 export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
@@ -74,6 +76,58 @@ export const repo = async (args?: string[]): Promise<string> => {
 
   return 'Opening repository...';
 };
+
+
+export const quote = async (args?: string[]): Promise<string> => {
+  const quote = await getQuote();
+
+  return quote.quote;
+};
+
+export const why = async (args?: string[]): Promise<string> => {
+  const reason = args.join('+');
+  var result = '';
+
+  const whyUsage = new usageText();
+  whyUsage.about = 'Why, indeed...\n';
+
+  whyUsage.usage = `
+Usage:
+  why philosophical
+  why nerdy
+  why -h | --help
+
+Options:
+  -h --help     Show this screen.
+  `;
+
+  if (!reason) {
+    return whyUsage.getFullUsage();
+  }
+
+  switch (reason) {
+    case '--help':
+    case '-h': {
+      result = whyUsage.getFullUsage();
+      break;
+    }
+    case 'philosophical': {
+      result =
+        'The terminal is an extension of all technology we use. It allows us to connect with it directly, to create a dialogue -- a conversation. But is this really a conversation if the answers to your queries have been determined before you even send them?';
+      break;
+    }
+    case 'nerdy': {
+      result = 'Because terminals are cool, why else?';
+      break;
+    }
+    default: {
+      result = `Option not supported.\n${whyUsage.getUsage()}`;
+    }
+  }
+
+  return result;
+};
+
 
 export const banner = (args?: string[]): string => {
   return `
